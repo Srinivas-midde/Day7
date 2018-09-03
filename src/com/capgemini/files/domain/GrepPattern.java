@@ -18,6 +18,7 @@ public class GrepPattern {
 				if(s.contains(word)) 
 				{
 					lines = "Line number " + lineCount +" : " + s;
+					System.out.println(lines);
 					lines = lines + "\n"; 
 					flag = 1;
 				}

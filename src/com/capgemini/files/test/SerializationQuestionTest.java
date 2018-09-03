@@ -33,6 +33,7 @@ class SerializationQuestionTest {
 		FileOutputStream fos = new FileOutputStream("C:\\Users\\smiddeku\\Desktop\\objects.ser");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(array);
+		oos.close();
 
 		FileInputStream fis = new FileInputStream("C:\\Users\\smiddeku\\Desktop\\objects.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);

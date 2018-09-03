@@ -20,5 +20,13 @@ class GrepTest {
 		assertEquals("String not found", GrepPattern.findString(file,"import"));
 	}
 
+	
+	@Test
+	void testPatternSearch1() throws FileNotFoundException, IOException {
+		File file = new File(
+				"C:\\Myfolder\\Date.java");
+
+		assertEquals("Line number 2 : import java.util.Scanner;\n", GrepPattern.findString(file,"import"));
+	}
 
 }

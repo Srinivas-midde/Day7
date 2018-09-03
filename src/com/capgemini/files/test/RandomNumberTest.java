@@ -15,7 +15,7 @@ class RandomNumberTest {
 	@Test
 	void testRandomNumber() {
 	Random rand = new Random();
-	File file = new File("C:\\filesfortest\\test.txt");{
+	File file = new File("C:\\example\\test.txt");{
 	
 	try(PrintWriter print = new PrintWriter(file))
 	{
@@ -30,8 +30,8 @@ class RandomNumberTest {
 		e1.printStackTrace();
 	}
 
-	TreeSet<Integer> treeset = new TreeSet<>();try(
-	FileReader reader = new FileReader(file);
+	TreeSet<Integer> treeset = new TreeSet<>();
+	try(FileReader reader = new FileReader(file);
 	BufferedReader br = new BufferedReader(reader))
 	{
 		String line;
